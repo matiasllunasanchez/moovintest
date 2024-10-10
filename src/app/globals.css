@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-border {
+  animation: spin 1s linear infinite;
+}
+.leaflet-draw-actions {
+  display: none !important;
+}
+.leaflet-draw-tooltip {
+  display: none !important;
+}
+.map-option:hover .map-option-description {
+  display: block;
+}
+
+/* hide edit layers button */
+a.leaflet-draw-edit-edit {
+  display: none !important;
+}
